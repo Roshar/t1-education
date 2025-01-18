@@ -6,9 +6,9 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class LoginPage {
 
-    private SelenideElement usernameField = $x("//input[@id='user-name']");
-    private SelenideElement passwordField = $x("//input[@id='password']");
-    private SelenideElement loginBtn = $x("//input[@id='login-button']");
+    private final SelenideElement usernameField = $x("//input[@id='user-name']");
+    private final SelenideElement passwordField = $x("//input[@id='password']");
+    private final SelenideElement loginBtn = $x("//input[@id='login-button']");
 
     // заполняем поля для логина  и пароля
     public void enterLoginData(String username, String password) {
